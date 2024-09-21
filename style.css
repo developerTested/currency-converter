@@ -1,0 +1,124 @@
+:root {
+    --button: black;
+    --padding: 0.75rem 0.55rem;
+    --rounded: 0.25rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('bg.png') #030728 no-repeat center;
+    color: white;
+}
+
+input,
+button {
+    width: 100%;
+}
+
+input,
+button,
+select {
+    padding: var(--padding);
+    border: transparent;
+    border-radius: var(--rounded);
+    outline: none;
+}
+
+.wrapper {
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    width: 500px;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    backdrop-filter: blur(0.5rem);
+}
+
+.wrapper .title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.swap {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    padding: 0.85rem 1.25rem;
+    border-radius: var(--rounded);
+
+}
+
+.dropbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: var(--rounded);
+    padding: 0.5rem 0.75rem;
+    background: white;
+}
+
+.dropbox img {
+    width: 1.65rem;
+}
+
+.dropbox select {
+    border: transparent;
+    background: transparent;
+    outline: none;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+.wrapper .results {
+    display: block;
+    text-align: center;
+    padding: var(--padding);
+    border-radius: var(--rounded);
+}
+
+.wrapper .submit-button {
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: var(--button);
+    color: white;
+}

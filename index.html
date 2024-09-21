@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Currency Converter
+        </div>
+
+        <form action="#" id="currencyForm">
+            <div class="form-group">
+                <label>Enter Amount</label>
+                <input type="number" name="amount" value="1" placeholder="0">
+            </div>
+
+            <div class="form-group-row">
+
+                <div class="form-group">
+                    <label for="from">From</label>
+
+                    <div class="dropbox">
+                        <img src="https://flagsapi.com/US/flat/32.png" alt="flag">
+
+                        <select name="from" id="from"></select>
+                    </div>
+                </div>
+                <div class="swap">
+                    <svg width="16" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.13 11.66H.22a.22.22 0 0 0-.22.22v1.62a.22.22 0 0 0 .22.22h16.45l-3.92 4.94a.22.22 0 0 0 .17.35h1.97c.13 0 .25-.06.33-.16l4.59-5.78a.9.9 0 0 0-.7-1.43zM19.78 5.29H3.34L7.26.35A.22.22 0 0 0 7.09 0H5.12a.22.22 0 0 0-.34.16L.19 5.94a.9.9 0 0 0 .68 1.4H19.78a.22.22 0 0 0 .22-.22V5.51a.22.22 0 0 0-.22-.22z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+
+                    <div class="dropbox">
+                        <img src="https://flagsapi.com/IN/flat/32.png" alt="flag">
+
+                        <select name="to" id="to"></select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">
+                Get Exchange Rate
+            </button>
+
+            <div class="results"></div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
